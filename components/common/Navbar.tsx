@@ -4,7 +4,9 @@ const Navbar: FC = () => {
 
   return (
     <header>
-      Navbar
+      <nav>
+        navigation
+      </nav>
     </header>
   )
 }
