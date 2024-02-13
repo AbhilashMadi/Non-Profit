@@ -3,6 +3,8 @@ import { Inter } from "next/font/google";
 import { ReactNode } from "react";
 
 import "@css/globals.css";
+import "@css/index.css";
+
 import Navbar from "@/components/common/Navbar";
 import Footer from "@/components/common/Footer";
 import { cn } from "@/lib/utils";
@@ -21,7 +23,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className={cn(inter.className, "container")}>
+      <body className={cn(inter.className)}>
         <Navbar />
         {children}
         <Footer />

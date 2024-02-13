@@ -1,10 +1,11 @@
+import Hero from "@/components/sections/Hero";
 import { FC } from "react";
 
 const Landing: FC = () => {
 
   return (
     <main>
-      Landing
+      <Hero />
     </main>
   )
 }

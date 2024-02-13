@@ -1,9 +1,15 @@
 import { FC } from "react";
+import { TextMuted } from "@ui/typography";
+import { Labels } from "@/resources/Labels";
 
 const Footer: FC = () => {
 
   return (
-    <footer>Footer</footer>
+    <footer className="bg-muted">
+      <TextMuted className="container p-4 text-center">
+        {Labels.harishaFoundation} &copy;{new Date().getFullYear()}
+      </TextMuted>
+    </footer>
   )
 }
 
