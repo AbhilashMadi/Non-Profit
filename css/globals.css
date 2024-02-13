@@ -57,3 +57,9 @@
     @apply bg-background text-foreground;
   }
 }
+
+@layer utilities{
+  .gr-underline{
+    @apply bg-gradient-to-r from-rose-400 via-fuchsia-500 to-transparent bg-[length:100%_3px] bg-no-repeat bg-bottom;
+  }
+}

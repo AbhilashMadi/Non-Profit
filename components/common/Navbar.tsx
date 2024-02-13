@@ -10,7 +10,7 @@ const Navbar: FC = () => {
       <div className="flex justify-between p-4 items-center container">
         <figure>
           <Link href={Paths.LANDING}>
-            Logo
+            Harisha Foundation
           </Link>
         </figure>
         <nav className="flex items-center gap-6">
