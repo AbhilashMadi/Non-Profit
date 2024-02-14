@@ -1,7 +1,10 @@
 import { FC } from "react";
 import Link from "next/link";
+import Image from "next/image";
 import { Button } from "@ui/button";
 import { Paths } from "@/resources/paths";
+
+import logSrc from "@/public/assets/tr-logo-resize.png";
 
 const Navbar: FC = () => {
 
@@ -10,7 +13,11 @@ const Navbar: FC = () => {
       <div className="flex justify-between p-4 items-center container">
         <figure>
           <Link href={Paths.LANDING}>
-            Harisha Foundation
+            <Image
+              src={logSrc}
+              alt="Harisha Foundation.org"
+              width={200} height={100}
+              placeholder="blur" />
           </Link>
         </figure>
         <nav className="flex items-center gap-6">
