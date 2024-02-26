@@ -4,8 +4,6 @@ import Image from "next/image";
 import { Button } from "@ui/button";
 import { Paths } from "@/resources/paths";
 
-import logSrc from "@/public/assets/tr-logo-resize.png";
-
 const Navbar: FC = () => {
 
   return (
@@ -14,10 +12,12 @@ const Navbar: FC = () => {
         <figure>
           <Link href={Paths.LANDING}>
             <Image
-              src={logSrc}
+              src={"/public/assets/tr-logo-resize.png"}
               alt="Harisha Foundation.org"
               width={200} height={100}
-              placeholder="blur" />
+              placeholder="blur"
+              blurDataURL="/public/assets/tr-logo-resize.png"
+            />
           </Link>
         </figure>
         <nav className="flex items-center gap-6">

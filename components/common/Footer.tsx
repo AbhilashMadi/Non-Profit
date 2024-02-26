@@ -1,6 +1,6 @@
 import { FC } from "react";
 import { TextMuted } from "@ui/typography";
-import { Labels } from "@/resources/Labels";
+import { Labels } from "@/resources/labels";
 
 const Footer: FC = () => {
 

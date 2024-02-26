@@ -4,10 +4,6 @@ import { FC } from "react";
 
 import Image from "next/image";
 
-import imgSrcOne from "@/public/images/img-one.jpg";
-import imgSrcTwo from "@/public/images/img-two.jpg";
-import imgSrcThree from "@/public/images/img-three.jpg";
-
 const CardsCarousel: FC = () => {
 
   return (
@@ -23,9 +19,10 @@ const CardsCarousel: FC = () => {
         </CardHeader>
         <CardContent className="relative h-[400px]">
           <Image
-            src={imgSrcOne}
+            src={"/public/images/img-one.jpg"}
             alt="Card Image One"
             className="object-cover object-center rounded-md"
+            blurDataURL="/public/images/img-one.jpg"
             placeholder="blur"
             fill
           />
@@ -43,9 +40,10 @@ const CardsCarousel: FC = () => {
         </CardHeader>
         <CardContent className="relative h-[400px]">
           <Image
-            src={imgSrcTwo}
+            src={"/public/images/img-two.jpg"}
             alt="Card Image One"
             className="object-cover object-center rounded-md"
+            blurDataURL="/public/images/img-two.jpg"
             placeholder="blur"
             fill
           />
@@ -63,9 +61,10 @@ const CardsCarousel: FC = () => {
         </CardHeader>
         <CardContent className="relative h-[400px]">
           <Image
-            src={imgSrcThree}
+            src={"/public/images/img-three.jpg"}
             alt="Card Image One"
             className="object-cover object-center rounded-md"
+            blurDataURL="/public/images/img-three.jpg"
             placeholder="blur"
             fill
           />
